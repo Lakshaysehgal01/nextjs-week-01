@@ -2,7 +2,7 @@ import axios from "axios";
 import { randomUUID } from "crypto";
 
 async function getBlogs() {
-  let res = await axios.get("https://jsonplaceholder.typicode.com/todos");
+  let res = await axios.get("http://localhost:3000/api/v1/user/todo");
   return res.data;
 }
 
